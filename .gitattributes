@@ -1,0 +1,2 @@
+# Notebook を GitHub の言語の集計から外す(主な言語を、同じ中身の .py の Python にするため)
+*.ipynb linguist-detectable=false
