@@ -164,7 +164,7 @@ train['precipitation']=train['precipitation']+0.01
 # In[297]:
 
 
-from sklearn.preprocessing import PowerTransformer
+from sklearn.preprocessing import PowerTransformer, StandardScaler
 boxcox_transformer=PowerTransformer(method='box-cox',standardize=False)
 boxcox_columns=pd.DataFrame(
     boxcox_transformer.fit_transform(train[numerical_columns]),
